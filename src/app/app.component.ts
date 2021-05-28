@@ -35,7 +35,7 @@ export class AppComponent {
     let aux_arr = []
 
     fileReader.onloadend = function(x) {
-      var lines = fileReader.result.split('\n');
+      var lines = fileReader.result.toString().split('\n');
       for(var line = 1; line < lines.length; line++){
         
         let item = lines[line].split('|')
