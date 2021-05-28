@@ -1,7 +1,6 @@
 <mat-sidenav-container class="sidenav-container"> 
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <span class="example-spacer"></span>
       <span>{{title}}</span>      
     </mat-toolbar>
   </mat-sidenav-content>
@@ -11,7 +10,13 @@
   <mat-card >
     <mat-card-content>
       <h3>Por favor seleccione el archivo de texto plano:</h3>
+      <h5>
+        <mat-icon class="info-icon" aria-hidden="false" aria-label="info icon">info</mat-icon>
+        Recuerde que el archivo debe tener el siguiente formato: <span class="texto-format">ID|PLACA|DNI|TRIPS|PRODUCTID</span>
+      </h5>
+      
       <input type="file" (change)="onChange($event.target.files)">
+
     </mat-card-content>
   </mat-card>
 
