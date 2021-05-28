@@ -24,7 +24,7 @@ export class AppComponent {
   public pieChart: GoogleChartInterface = {
     chartType: 'ColumnChart',
     dataTable: this.DataChart,
-    options: {title: 'Countries'}
+    options: {title: 'Viajes'}
   };
 
   public onChange(fileList: FileList): void {
